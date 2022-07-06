@@ -118,3 +118,11 @@
 - [Exam Review Guide](https://learn.hashicorp.com/tutorials/terraform/associate-review?in=terraform/certification)
 - [Sample Questions](https://learn.hashicorp.com/tutorials/terraform/associate-questions?in=terraform/certification)
 
+REQUIREMENT:
+============
+
+In the AWS console, Launch an AWS EC2 Instance, set up Nodejs & MongoDB server, and set up a docker environment on the same server to convert a simple Nodejs application to a docker image and run the application on a docker container on port 3000. 
+
+Requirements:
+  -> AWS account
+  -> Nodejs demo app code
