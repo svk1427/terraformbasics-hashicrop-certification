@@ -1,5 +1,5 @@
 # Terraform Null Resource
-
+null_resource implements standard resource library, but no further action is taken. The triggers argument allows an arbitrary set of values that will cause the replacement of resources when changed.
 ## Step-01: Introduction
 - Understand about [Null Provider](https://registry.terraform.io/providers/hashicorp/null/latest/docs)
 - Understand about [Null Resource](https://www.terraform.io/docs/language/resources/provisioners/null_resource.html)

@@ -45,6 +45,8 @@ http://<Public-DNS>
 # Destroy Resources
 terraform destroy -auto-approve
 ```
+What is a data resource in Terraform?
+Data sources allow data to be fetched or computed for use elsewhere in Terraform configuration. Use of data sources allows a Terraform configuration to build on information defined outside of Terraform, or defined by another separate Terraform configuration.
 
 
 ## References
