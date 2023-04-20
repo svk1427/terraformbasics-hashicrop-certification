@@ -19,5 +19,6 @@ resource "aws_instance" "my-ec2-vm" {
   }    
 }
 
-
+#depends_on metarg means resB creation depends on resA
+#This arg is available in both res and mod
 
