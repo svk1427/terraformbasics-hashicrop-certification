@@ -25,5 +25,7 @@ resource "aws_instance" "my-demo-vm" {
 }
 */
 
+#manam create chesina local files ni desired state antam
+#manam local res files valla create aiena aws infra ni current state antam
 
 
