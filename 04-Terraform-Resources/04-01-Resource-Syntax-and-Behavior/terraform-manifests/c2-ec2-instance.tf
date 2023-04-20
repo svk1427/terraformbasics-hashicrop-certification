@@ -19,4 +19,5 @@ resource "aws_instance" "my-ec2-vm" {
 
 }
 
- 
+#resource/terraform code destroy ipoie malli recreate avvali antey like az or ami changes chesinappudu avutadi ala,dhinni manam observer cheyyali plan lo
+#res/tfcode update antey vunna res ki tags/any names esthey adhi update avutadi dhinni update in place antam,dhinni manam observer cheyyali plan lo
