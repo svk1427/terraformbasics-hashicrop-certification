@@ -25,3 +25,4 @@ resource "aws_instance" "web" {
 #3.Ignore changes - okasari infra create ipoyaka, eadaina mandatary scenario/usecase valla okokkasari manual ga aws console  nundi changes chestam, chesina tarvata
 #future lo eppudaina tf apply cmnd esthey manual changes anni delete ipothai so ala delete avvakunda ah particular manual changes ni ignore cheydaniki e LC use chestam.
 #eavaitey manam manual ga add chesamo ah particular res lo vatini comma sperated values lo echi eppudaina migatha infra ni execute chestey evi dellete avvakunda vuntai.
+#comma seperated values kakunda all ane option kuda evvochu ela estehy changes anni remove avvakunda vuntai
