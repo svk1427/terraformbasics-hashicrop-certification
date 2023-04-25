@@ -31,6 +31,8 @@ terraform apply -auto-approve
 http://<Public-IP>
 http://<Public-DNS>
 ```
+#output lo manam attr.reference,arg,reference ani rendu estam, renditlo eadaina evvoachu mana req batti adhi vatini read chesi output lo esthundi
+#ah attr.ref,arg.ref manaki terraform doc lo vuntai
 
 ## Step-03: Query Terraform Outputs
 - Terraform will load the project state in state file, so that using `terraform output` command we can query the state file. 
@@ -64,7 +66,7 @@ Observation: You should see the value as sensitive
 terraform output ec2_publicdns
 Observation: You should get non-redacted original value from terraform.tfstate file
 ```
-
+#eadain sensitve values ni output lo read cheykudadhu ani anukuntey paina vunnattu ala evvali
 ## Step-05: Generate machine-readable output
 ```t
 # Generate machine-readable output
