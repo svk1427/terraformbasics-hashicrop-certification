@@ -31,7 +31,7 @@ argument `-var-file`
   - aws_region is a variable of type `string`
   - ec2_ami_id is a variable of type `string`
   - ec2_instance_count is a variable of type `number`
-```t
+```
 # Initialize Terraform
 terraform init
 
@@ -55,7 +55,7 @@ terraform destroy -auto-approve
 rm -rf .terraform*
 rm -rf terraform.tfstate*
 ```
-
+#edhi general ga var files lo declare chesina values ni thiskuntadi
 ## Step-02: Input Variables Assign When Prompted
 - **Reference Sub folder:** v2-Input-Variables-Assign-when-prompted
 - Add a new variable in `variables.tf` named `ec2_instance_type` without any default value. 
@@ -74,7 +74,7 @@ terraform fmt
 # Review the terraform plan
 terraform plan
 ```
-
+#e method lo var file lo declare cheyleni values ni exec time lo eshtam.
 ## Step-03: Input Variables Override default value with cli argument `-var`
 - **Reference Sub folder:** v3-Input-Variables-Override-default-with-cli
 - We are going to override the default values defined in `variables.tf` by providing new values using the `-var` argument using CLI
@@ -102,7 +102,8 @@ terraform plan -var="ec2_instance_type=t3.large" -var="ec2_instance_count=1" -ou
 # Create / Deploy Terraform Resources using Plan file
 terraform apply v3out.plan 
 ```
-
+#e method lo particular values ni var keyword tho mention chesi vatini oka out.plan ane file lo save chesi ah particular file tho exec chestey ahn file lo vunna 
+#values config lo applicable avuthai.
 ## Step-04: Input Variables Override with Environment Variables
 - **Reference Sub folder:** v4-Input-Variables-Override-with-Environment-Variables
 - Set environment variables and execute `terraform plan` to see if it overrides default values 
@@ -132,7 +133,8 @@ unset TF_VAR_ec2_instance_count
 unset TF_VAR_ec2_instance_type
 echo $TF_VAR_ec2_instance_count, $TF_VAR_ec2_instance_type
 ```
-
+#manam munduga export tho var values esthey vatini var file lo declare chesina
+#values override chestai
 ## Step-05: Assign Input Variables from terraform.tfvars
 - **Reference Sub folder:** v5-Input-Variables-Assign-with-terraform-tfvars
 - Create a file named `terraform.tfvars` and define variables
@@ -156,7 +158,7 @@ terraform apply
 # Access Application
 http://<Elastic-IP-Address>
 ```
-
+#If the file name is `terraform.tfvars`, terraform will auto-load the variables present in this file by overriding the `default` values in `variables.tf`
 ## Step-06: Assign Input Variables with -var-file argument
 - **Reference Sub folder:** v6-Input-Variables-Assign-with-tfvars-var-file
 - If we plan to use different names for  `.tfvars` files, then we need to explicitly provide the argument `-var-file` during the `terraform plan or apply`
@@ -179,7 +181,7 @@ terraform fmt
 terraform plan -var-file="web.tfvars"
 terraform plan -var-file="app.tfvars"
 ```
-NOTE: whenever we give terraform plan -var-file="app.tfvars" it will take/override values from the default variable file, but if our code has 
+#NOTE: whenever we give terraform plan -var-file="app.tfvars" it will take/override values from the default variable file, but if our code has 
 terraform.tfvars terraform automatically override/take values from terraform.tfvars file without mention terraform.tfvars filename only 
 because of terraform.tfvars file presence.
 If we mention web.tfvars/app.tfvars it takes variables from that files and automatically override values from the terraform.tfvars because of this file presence.
@@ -200,6 +202,7 @@ terraform fmt
 # Review the terraform plan
 terraform plan 
 ```
+#e method lo var file lo ea vlaues ekkada vunna sare, auto.vars ane file vuntey values ah file nundi matrame thiskuntadi 
 ## Step-08: Implement complex type cosntructors like `list` and `maps`
 - **Reference Sub folder:** v8-Input-Variables-Lists-Maps
 - [Type Constraints](https://www.terraform.io/docs/language/expressions/types.html)
@@ -340,7 +343,7 @@ terraform fmt
 # Review the terraform plan
 terraform plan
 ```
-
+#validation rules like regular expressions, eadaina particular value ni validate cheyyali antey edhi use chestam
 ## Step-10: Protect Sensitive Input Variables
 - **Reference Sub folder:** v10-Sensitive-Input-Variables
 - [AWS RDS DB Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance)
