@@ -48,6 +48,24 @@ terraform destroy -auto-approve
 What is a data resource in Terraform?
 Data sources allow data to be fetched or computed for use elsewhere in Terraform configuration. Use of data sources allows a Terraform configuration to build on information defined outside of Terraform, or defined by another separate Terraform configuration.
 
+#some other API software cloud if you want to call.
 
+And those APIs are available as a data source
+
+using that respect to provider.
+
+So then you'll be able to access
+
+that which is outside of Terraform,
+
+in the same way there is another Terraform project.
+
+And from that if you want to gather some information
+
+and then use in this current Terraform project
+
+also you can use that, okay?
+
+In both ways you can use the data sources.
 ## References
 - [AWS EC2 AMI Datasource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami)
