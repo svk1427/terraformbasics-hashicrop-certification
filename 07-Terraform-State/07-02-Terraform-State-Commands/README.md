@@ -1,4 +1,4 @@
-# Terraform State Commands
+# Terraform State Commands - need to do practical
 
 ## Step-01: Introduction
 - Terraform Commands
@@ -70,7 +70,7 @@ terraform apply -auto-approve
 terraform show
 Observation: It should display the state file
 ```
-
+tf show command eadaitey manam plan chestamo dhanni chupisthundi and also tf show antey state file kuda chupisthundi
 ## Step-04: Understand terraform refresh in detail
 - This commands comes under **Terraform Inspecting State**
 - Understanding `terraform refresh` clears a lot of doubts in our mind and terraform state file and state feature
@@ -86,7 +86,9 @@ Observation: It should display the state file
 ```t
 "demotag" = "refreshtest"
 ```
-
+tf refresh cmd endukantey eadaina manual changes aws lo jarigitey vatini pull chesi state file ni update chestadi
+desired state antey mana config files lo vunna infra
+current state antey infra create ipoyaka aws dashboard lo vunna infra
 ### Step-04-02: Execute terraform plan  
 - You should observe no changes to local state file because plan does the comparison in memory 
 - Verify S3 Bucket - no update to tfstate file about the change 
@@ -109,7 +111,8 @@ terraform refresh
 - Now decision to be made if you want those changes or not.
 - **Choice-1:** If you dont want those changes proceed with terraform apply so manual changes we have done on our cloud EC2 Instance will be removed.
 - **Choice-2:** If you want those changes, refer `terraform.tfstate` file about changes and embed them in your terraform manifests (example: c4-ec2-instance.tf) and proceed with flow (referesh, plan, review execution plan and apply)
-
+manual changes oddu anukuntey choice1 ki velllali
+man.changes kavali anukuntey choice2 ki vellali.
 ### Step-04-05: I picked choice-2, so i will update the tags in c4-ec2-instance.tf
 - Update in c4-ec2-instance.tf
 ```t
@@ -138,11 +141,11 @@ terraform apply -auto-approve
 - **terraform  state show:** This command is used to show the attributes of a single resource in the Terraform state.
 ```t
 # List Resources from Terraform State
-terraform state list
+terraform state list - edhi ah state lo vunna res list esthundi
 
 # Show the attributes of a single resource from Terraform State
-terraform  state show data.aws_ami.amzlinux
-terraform  state show aws_instance.my-ec2-vm
+terraform  state show data.aws_ami.amzlinux - edhi ah state lo vunna res yokka attributes ni chupisthundi
+terraform  state show aws_instance.my-ec2-vm - 
 ```
 ### Step-05-02: Terraform State mv command
 - This commands comes under **Terraform Moving Resources**
