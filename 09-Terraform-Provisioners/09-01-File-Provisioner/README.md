@@ -1,8 +1,12 @@
 # Terraform Provisioners
+prov antey server/inkedaina aws service ki data ni provide cheydaniki use chestam like ansible,packer,chef etc..
+connection block - used to setup a connection into the remote servers means to login inito the server etc..ekkada manam pem key,user name echi putty tho login aienattu e connection block nunndi avutham
 
+self - expressions in conecton block cant refer from the parent res like arg res and arg ref thats why we are using self for connection block to refer values
 ## Step-00: Provisioner Concepts
 - Generic Provisioners
   - file
+  fp antey local lo exec chestunna pc nundi eadaina files/folders remote aws servers ki copy cheyyali anukuntey e fp nii use chestam
   - local-exec
   - remote-exec
 - Provisioner Timings

@@ -1,6 +1,6 @@
 # Terraform Dynamic Expressions
-
-## Step-01: Introduction
+dynamic expressions are nothing like if,loops conitional expressions
+# Step-01: Introduction
 - Learn [Dynamic Expressions](https://www.terraform.io/docs/language/expressions/conditionals.html) in Terraform
 - **Conditional Expression:** A conditional expression uses the value of a bool expression to select one of two values.
 ```t

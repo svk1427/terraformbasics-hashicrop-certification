@@ -115,7 +115,9 @@ export TF_VAR_variable_name=value
 export TF_VAR_ec2_instance_count=1   //export is for linux and set is for windows
 export TF_VAR_ec2_instance_type=t3.large
 echo $TF_VAR_ec2_instance_count, $TF_VAR_ec2_instance_type
-
+#windows lo set echina tarvata e 2 cmnds evvali, and mainly evi cmd promt lo work avuthnnai, powersell lo wor avvatlehu
+set TF_VAR_ec2_instance_count=2
+echo %TF_VAR_ec2_instance_count%
 # Initialize Terraform
 terraform init
 
@@ -181,10 +183,9 @@ terraform fmt
 terraform plan -var-file="web.tfvars"
 terraform plan -var-file="app.tfvars"
 ```
-#NOTE: whenever we give terraform plan -var-file="app.tfvars" it will take/override values from the default variable file, but if our code has 
-terraform.tfvars terraform automatically override/take values from terraform.tfvars file without mention terraform.tfvars filename only 
-because of terraform.tfvars file presence.
-If we mention web.tfvars/app.tfvars it takes variables from that files and automatically override values from the terraform.tfvars because of this file presence.
+#NOTE: whenever we give terraform plan it will take/override values from the terraform.tfvars,okavela terraform plan echinappudu terrafor.tfvars file lekapotey it will take/override values from the default variable file.
+If we mention plan -var-file = web.tfvars/app.tfvars it takes variables from that files and automatically override values from the terraform.tfvars because of this file presence.
+
 ## Step-07: Auto load input variables with .auto.tfvars files
 - **Reference Sub folder:** v7-Input-Variables-Assign-with-auto-tfvars
 - We will create a file with extension as `.auto.tfvars`. 

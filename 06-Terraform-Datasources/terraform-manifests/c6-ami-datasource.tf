@@ -25,3 +25,11 @@ data "aws_ami" "amzlinux" { #data means this a data resource and aws_ami means i
 #alagey mult.provider kuda dhiniki support chestadi
 #lifecycle support cheydhu
 #count and foreach support chestai
+#if u want to call api/cloud from outside terraform at that time also s will be useful
+#eadaina another diff pro lo vuunna data ni present tf project lo use cheyyali anna sare
+#e ds use avutai
+#u can also use to fetch or computed values in tf config using ds
+#it declares with a data resource resource name
+#data resource velli data source ni call chestadi dhinni data block antam
+#each dr associated with single ds
+#we can refer these ds into other files also like ec2-instance.tf

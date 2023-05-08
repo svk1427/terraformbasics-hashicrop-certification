@@ -1,5 +1,9 @@
 # Terraform Null Resource
 null_resource implements standard resource library, but no further action is taken. The triggers argument allows an arbitrary set of values that will cause the replacement of resources when changed.
+
+nr antey manaki prv ni direct ga specific res ki run cheykudadhu ane situations lo manam ah prv ni null resorce ki associate chestam,nullres kuda prv la treat chestai but work cheyvu.
+
+edi ela work avuthundi antey prv ni,connection block ni avasaram ledhu annavatiki manam null resource lo declare chestam. infra create ayyaka konni secds wait chesaka, ah nullres lo vunna dependson dwara timestamps time ipogane nullres exec avvadam, work cheydam start chestadi, e nullres lo trigger vuntai ah trigger tf apply cmnd run cheygane always update avurtadi.so ekkada ah nullres exec avvali antey sleep time complete avvali, sleep time complete avvagane nullres exec aie andulo vunna prv anni exec avuthai remote server loki anduke null res ni nullres+prv ani antaru
 ## Step-01: Introduction
 - Understand about [Null Provider](https://registry.terraform.io/providers/hashicorp/null/latest/docs)
 - Understand about [Null Resource](https://www.terraform.io/docs/language/resources/provisioners/null_resource.html)

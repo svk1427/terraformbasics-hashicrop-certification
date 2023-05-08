@@ -6,7 +6,7 @@
 ## Step-02: Review the Terraform Manifests
 - c1-versions.tf
   - Discuss about Terraform, AWS and Random Pet Provider Versions
-- c2-s3bucket.tf
+- c2-s3bucket.tf  
   - Discuss about Random Pet Resource
   - Discuss about S3 Bucket Resource
 - .terraform.lock.hcl

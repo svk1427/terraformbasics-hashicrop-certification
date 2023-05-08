@@ -1,5 +1,5 @@
 # Terraform Graph
-
+tf graph endukantey manam create cheyboye/chesina config ni visual representation lo chuali antey edhi use avuthundi , dot file ni create chesi ah file ni below websites lo paste chestey visua.repre ostadi.
 ## Step-01: Introduction
 - The `terraform graph` command is used to generate a visual representation of either a configuration or execution plan
 - The output is in the DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.

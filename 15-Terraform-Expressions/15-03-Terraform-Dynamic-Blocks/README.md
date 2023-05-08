@@ -1,5 +1,5 @@
 # Terraform Dynamic Blocks
-
+dynamic block antey mana code ni simplify chesi, repeated nested blocks ni dynamic blocks lo vunchi vatini inside resource, data, provider, and provisioner blocks lo use cheyyochu, ekkada mention chesinavanni support chestai dyn.blk ki
 ## Step-01: Introduction
 - Some resource types include repeatable nested blocks in their arguments, which do not accept expressions
 - You can dynamically construct repeatable nested blocks like setting using a special dynamic block type, which is supported inside resource, data, provider, and provisioner blocks

@@ -1,5 +1,5 @@
 # Terraform local-exec Provisioner
-
+local exec antey mana local files tho infra create ipoyaka , ah infra appudaina destroy ipotey ah destroy aiena information like reason,date,time everything will be store into a file in our local files, alagey eadaina data manaki kavaali anukuntey ah data ni kuda e local exec use cheskoni oka file loki fetc cheskovachu , fetch chesaka dhanni local lo save avuthai
 ## Step-00: Pre-requisites
 - Create a EC2 Key pain with name `terraform-key` and copy the `terraform-key.pem` file in the folder `private-key` in `terraform-manifest` folder
 - Connection Block for provisioners uses this to connect to newly created EC2 instance to copy files using `file provisioner`, execute scripts using `remote-exec provisioner`

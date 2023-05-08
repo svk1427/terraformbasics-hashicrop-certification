@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
 #this is also a behaviour changes of res meta arg
 #lifecycle is a nested block that can appear within a resource block
 #3 types of lifecycles are available 
-#1.Create_before_destroy - fir ex, us-east-1a lo config ni destroy chesi us-east-2b lo create cheyyali annappudu edhi use chestey,first edhi 2b lo infra mothham create
+#1.Create_before_destroy - for ex, us-east-1a lo config ni destroy chesi us-east-2b lo create cheyyali annappudu edhi use chestey,first edhi 2b lo infra mothham create
 #-chesina tarvata 1a lo infra ni destroy chestadi so thats why we called createbeforedestroy.
 #2.Prevent_destroy - for ex, eadaina imp config elanti situation lo kuda delete avvakudadhu annappudu e preventdestroy use chestam edhi use chestey ea usecase lo aiena 
 #-sare mana config delete/destroy avvadhu even though u applied destroy command kani ah specific res ni remove chesi apply chestey matram delete/destroy ipothundi.

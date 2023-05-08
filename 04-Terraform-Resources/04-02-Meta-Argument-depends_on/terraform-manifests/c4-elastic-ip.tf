@@ -11,4 +11,4 @@ resource "aws_eip" "my-eip" {
 
 #automatically provider dependencies are there and explicit dependecies are there
 #APD means genearally it comes along with terraform like in ec2 instance creation public ip will be assign once the ec2 created
-#but ED is manually dependson meta arg will deceide to create resB dependson resA like above 3 lines
+#but ED is manually depends on meta arg will deceide to create resB depends on resA like above 3 lines

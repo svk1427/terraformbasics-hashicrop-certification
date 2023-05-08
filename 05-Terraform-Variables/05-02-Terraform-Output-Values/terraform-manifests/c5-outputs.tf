@@ -20,5 +20,11 @@ output "ec2_security_groups" {
 output "ec2_publicdns" {
   description = "Public DNS URL of an EC2 Instance"
   value = "http://${aws_instance.my-ec2-vm.public_dns}"
-  #sensitive = true   #Uncomment it during step-04 execution
+  #sensitive = true   #Uncomment it during step-04 execution #els estey exec lo output values lo sensitive chupistai original value cupinchadu
 }
+
+#apply chesaka terraform output cmnd to  output cudochu
+#alaney particular res output ni kuda chudochu like 
+#terraform output ec2_security_groups
+#terraform output ec2_publicdns
+#sensitive use cesina sare, .tf file lo matram anni values non-encrypt aie vuntai

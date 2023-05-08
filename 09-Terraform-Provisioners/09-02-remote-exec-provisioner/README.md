@@ -1,5 +1,5 @@
 # Terraform remote-exec Provisioner
-
+remote exec antey edhi conf.management la use avutadi like eadaina server config related files eavaina local nundi server ki send cheyyali antey mundu manam file provision tho ah files ni server lo edhoka folder loki send cheyyali tarvata 120 sec sleep echi e remote exec esthey ah path lo vunna file actual path loki velli execute avuthundi
 ## Step-00: Pre-requisites
 - Create a EC2 Key pain with name `terraform-key` and copy the `terraform-key.pem` file in the folder `private-key` in `terraform-manifest` folder
 - Connection Block for provisioners uses this to connect to newly created EC2 instance to copy files using `file provisioner`, execute scripts using `remote-exec provisioner`

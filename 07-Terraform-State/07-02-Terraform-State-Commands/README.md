@@ -87,7 +87,7 @@ tf show command eadaitey manam plan chestamo dhanni chupisthundi and also tf sho
 "demotag" = "refreshtest"
 ```
 tf refresh cmd endukantey eadaina manual changes aws lo jarigitey vatini pull chesi state file ni update chestadi
-desired state antey mana config files lo vunna infra
+desired state antey mana local config files lo vunna infra
 current state antey infra create ipoyaka aws dashboard lo vunna infra
 ### Step-04-02: Execute terraform plan  
 - You should observe no changes to local state file because plan does the comparison in memory 
@@ -111,7 +111,7 @@ terraform refresh
 - Now decision to be made if you want those changes or not.
 - **Choice-1:** If you dont want those changes proceed with terraform apply so manual changes we have done on our cloud EC2 Instance will be removed.
 - **Choice-2:** If you want those changes, refer `terraform.tfstate` file about changes and embed them in your terraform manifests (example: c4-ec2-instance.tf) and proceed with flow (referesh, plan, review execution plan and apply)
-manual changes oddu anukuntey choice1 ki velllali
+manual changes oddu anukuntey choice1 ki vellali
 man.changes kavali anukuntey choice2 ki vellali.
 ### Step-04-05: I picked choice-2, so i will update the tags in c4-ec2-instance.tf
 - Update in c4-ec2-instance.tf
@@ -209,19 +209,23 @@ Observation:
 2) Message-2: This means that Terraform did not detect any differences between your
 configuration and real physical resources that exist. As a result, no
 actions need to be performed.
- 
+#edi res name ni change chestadi antey, adi manam exact ga cheykapotey chala issues/conflicts osthai
+oka daggara res name change chestey , a res name ea places lo vundo akkada kuda exact ga rename chesi apply cheyyali
+manam anni correct ga chestey adhi oka success o/p esthundi like no canges,infra upto date like that
 ```
 ### Step-05-03: Terraform State rm command
 - This commands comes under **Terraform Moving Resources**
 - The `terraform state rm` command is used to remove items from the Terraform state. 
 - This command can remove single resources, single instances of a resource, entire modules, and more.
 ```t
+#e cmnd mv cmnd ki cont ga vuntundi,eadaitey manam mv chesamo adi delete cheyyali antey
+#e rm cmnd use chestam.ela chesinappudu remote loc lo new state file create avutundi
 # Terraform List Resources
 terraform state list
 
 # Remove Resources from Terraform State
-terraform state rm -dry-run aws_instance.my-ec2-vm-new
-terraform state rm aws_instance.my-ec2-vm-new
+terraform state rm -dry-run aws_instance.my-ec2-vm-new #dry run antey em delete chestado chhupistadi
+terraform state rm aws_instance.my-ec2-vm-new #edhi delete chesestadi direct ga
 Observation: 
 1) Firstly takes backup of current state file before removing (example: terraform.tfstate.1611930284.backup)
 2) Removes it from terraform.tfstate file
@@ -245,11 +249,14 @@ terraform plan
 # Run Terraform Apply
 terraform apply 
 ```
-
+eadaina tf config aws dasboard lo tf tho manage cheyakkarleddhu annappudu e rm cmnd use chestam, it will remove info about that config in state file, 
+mana config taluka data eadaina state file lo lekapotey adhi tf maintain cheylenattu
+practical cheyyali chala sarlu e tf state cmnds
 # Step-05-04: Terraform State replace-provider command
 - This commands comes under **Terraform Moving Resources**
 - [Terraform State Replace Provider](https://www.terraform.io/docs/cli/commands/state/replace-provider.html)
 
+manam eppudaina provider ni marchali anukuntey aws nundi inkoka dhaniki appudu edhi use chestam, manam aws to aws use cheyyali annappudu state file loc nundi provier ni use chestam
 
 ### Step-05-05: Terraform State pull / push command
 - This command comes under **Terraform Disaster Recovery Concept**
@@ -276,6 +283,8 @@ terraform state push
 # Manually Unlock the State
 terraform force-unlock LOCK_ID
 ```
+remote loc lo vunna state file ki vunna lock ni remove cheydaniki e cmnd use chestam
+edhi local state file ki use avvadhu only remote state file ki matrame
 
 ## Step-07: Terraform taint & untaint commands
 -  These commands comes under **Terraform Forcing Re-creation of Resources**
@@ -287,6 +296,7 @@ terraform force-unlock LOCK_ID
   - This reverses either a manual terraform taint or the result of provisioners failing on a resource.
   - This command will not modify infrastructure, but does modify the state file in order to unmark a resource as tainted.
 ```t
+untaint antey taint chesaka manam apply cheyyam anukuntey untaint cheyyochu appudu infra lo em change jaragadhu
 # List Resources from state
 terraform state list
 
@@ -308,7 +318,7 @@ terraform plan
 Observation: 
 Message: "No changes. Infrastructure is up-to-date."
 ```
-
+manam eppudaina existing res ni recreate cheyyali annappudu edhi use chestam
 
 ## Step-08: Terraform Resource Targeting - Plan, Apply (-target) Option
 - The `-target` option can be used to focus Terraform's attention on only a subset of resources. 
@@ -353,7 +363,8 @@ Observation:
 terraform apply -target=aws_instance.my-ec2-vm-new
 
 ```
-
+eadaina res manaki confuse ga vundi adhi correct ga value estada evvaddha ani doubt vunnappudu e -target use chestam , edhi ah specific target res ni check chesi exec chestadi
+eamaina issues ostey handle chestadi
 ## Step-09: Terraform Destroy & Clean-Up
 ```t
 # Destory Resources

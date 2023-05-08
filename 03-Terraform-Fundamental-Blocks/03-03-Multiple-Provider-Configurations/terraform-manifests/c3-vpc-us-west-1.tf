@@ -7,8 +7,9 @@ resource "aws_vpc" "vpc-us-west-1" {
   }
 }
 
-
 /*
+ekkada manam provider ane argument use chesi providername.alias ane meta.arg and res.arg
+use chesi 2nd provider value/region ni select cheskuntam
 Additional Note: 
 provider = <PROVIDER NAME>.<ALIAS>  # This is a Meta-Argument from Resources Section nothing but a Special Argument
 */

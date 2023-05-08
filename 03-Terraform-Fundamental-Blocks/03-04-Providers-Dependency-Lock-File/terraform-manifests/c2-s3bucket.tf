@@ -1,8 +1,8 @@
 # Resource Block: Create Random Pet Name 
-resource "random_pet" "petname" {
-  length    = 5
-  separator = "-"
-}
+# resource "random_pet" "petname" {
+#   length    = 5
+#   separator = "-"
+# }
 
 # Resource Block: Create AWS S3 Bucket
 resource "aws_s3_bucket" "sample" {
@@ -12,9 +12,12 @@ resource "aws_s3_bucket" "sample" {
 }
 
 #this dependancy lock file primarly using for provider version locking
-# e DL endukantey version constraints vundadam valla, mana config ki ea version correct ani edhi deceide chesthundi
-#once edhi create ayyaka manam ah code repo lo peditey future lo appudu use chesina same version vuntundi
-#it curently works for provider dependnecies not for module
-#when you setup a version then it will download a specofic version constraint and check the errors in future with checksums
-#e lock file lekapotey manam oka verison ni default ga provide chestey adhi latest version thiseskuntadi ala kakunda -
-#manam lock file tho chestey specific version create avutadi mana confug ki thaggattuga
+# e DL endukantey version constraints vundadam valla, mana config ki ea version correct ani edhi 
+# deceide chesthundi once edhi create ayyaka manam ah code repo lo peditey future lo appudu use 
+#chesina same version vuntundi, it curently works for provider dependnecies not for module
+#when you setup a version then it will download a specific version constraint and check the errors
+#in future with checksums
+#e lock file lekapotey manam oka verison ni default ga provide chestey adhi latest version 
+#thiseskuntadi ala kakunda manam lock file tho chestey specific version create avutadi mana config
+# ki thaggattuga, okavela manam dinni maintain cheykapotey version constraints issues ochi future lo -
+#modifications chesinappudu errors ostai

@@ -1,5 +1,8 @@
 # Terraform Debug
-
+TF_LOG -  antey e kinda vunnvanni andulo chupistai vitini log level antam
+TF_LOG_PATH - eppudaitey local terminal lo e log path estaemo manam ea tf cmnd run chesina sare, logs ah sepcific path lo store avuthai
+manam ea path evvakunda setup chestey mana files vunna folder lo create avuthunddi
+lekapotey manam specific ga mention chestey manam mention chesina path lo create avuthai logs anni
 ## Step-01: Introduction
 - Learn about Terraform Debug
 - TF_LOG & TF_LOG_PATH

@@ -1,7 +1,7 @@
 # Terraform Settings Block
 terraform {
   # Terraform Version
-  required_version = "~> 0.14.6"
+  required_version = "1.2.5"
   required_providers {
     # AWS Provider 
     aws = {
@@ -9,16 +9,16 @@ terraform {
       version = ">= 2.0.0"  #this is our version constraint
     }
     # Random Provider
-    random = {
-      source  = "hashicorp/random"
-      version = "3.0.0"
-    }
+    # random = {
+    #   source  = "hashicorp/random"
+    #   version = "3.0.0"
+    # }
   }
 }
 
 # Provider Block
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
   profile = "default" # Defining it for default profile is Optional
 }
 

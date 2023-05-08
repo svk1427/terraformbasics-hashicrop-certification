@@ -12,7 +12,7 @@
   - terraform workspace select
   - terraform workspace delete
   
-
+ig infra ki ws recommend kadhu, ddifferent directories lo manintain chestey best
 ## Step-02: Update terraform manifests to support multiple workspaces
 - **Sub-folder we are working on:** v1-local-backend
 - Ideally, AWS don't allow to create a security group with same name twice. 
@@ -285,7 +285,7 @@ rm -rf .terraform*
 # Clean-Up State files in S3 bucket 
 Go to S3 Bucket and delete files
 ```
-
+In remote loc, statefiles will create for every ws inddividually
 
 ## References
 - [Terraform Workspaces](https://www.terraform.io/docs/language/state/workspaces.html)

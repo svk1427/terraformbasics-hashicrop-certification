@@ -31,7 +31,7 @@ terraform apply -auto-approve
 http://<Public-IP>
 http://<Public-DNS>
 ```
-#output lo manam attr.reference,arg,reference ani rendu estam, renditlo eadaina evvoachu mana req batti adhi vatini read chesi output lo esthundi
+#output lo manam attr.reference,arg.reference ani rendu estam, renditlo eadaina evvoachu mana req batti adhi vatini read chesi output lo esthundi
 #ah attr.ref,arg.ref manaki terraform doc lo vuntai
 
 ## Step-03: Query Terraform Outputs

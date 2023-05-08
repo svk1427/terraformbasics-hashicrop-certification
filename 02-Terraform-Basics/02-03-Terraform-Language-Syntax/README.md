@@ -44,7 +44,7 @@ resource "aws_instance" "ec2demo" { # BLOCK
 - Discuss about Terraform Top-Level blocks
   - Terraform Settings Block
   - Provider Block
-  - Resource Block
+  - Resource Block  
   - Input Variables Block
   - Output Values Block
   - Local Values Block

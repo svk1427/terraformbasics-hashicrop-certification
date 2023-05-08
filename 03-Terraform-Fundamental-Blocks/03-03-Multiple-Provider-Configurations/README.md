@@ -20,7 +20,7 @@ provider "aws" {
   alias = "aws-west-1"
 }
 ```
-
+#ekkada multi providers antey diff cloud platforms kadu aws loney diff regions
 ## Step-03: How to reference the non-default provider configuration in a resource?
 ```t
 # Resource Block to Create VPC in us-west-1

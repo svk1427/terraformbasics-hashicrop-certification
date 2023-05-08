@@ -1,10 +1,10 @@
 # Terraform Remote State Storage & Locking
-#tf state antey tf backend ani ardam, tf config file exec cheyganae state file create avutadi adhi local state file antam, edhi single tf developer itey cheyyochu kani , multiple devs work chesinappudu e local state file ni access cheylem thast why for this we want shared location like s3 bucket.
+#tf state antey tf backend ani ardam, tf config file exec cheygane state file create avutadi adhi local state file antam, edhi single tf developer itey cheyyochu kani , multiple devs work chesinappudu e local state file ni access cheylem thast why for this we want shared location like s3 bucket.
 remote state lo file vuntey mult.devs work chesina sare , evaraina access cheyyochu and infra kuda update avuthundi
-
+e remote file lo mana whole config yokka data vuntundi,data means like a acknoledge
 e remote file location tho kuda oka problem vundi enti antey, mult.devs okesari infra lo update chestey conflicts ochi state file corrupt ayye chance vuntadi
-e problem ni solve cheydaniki state locking functionality vundi, edhi set chesaka oka dev config lo change chesinappudu inkoka dev ki remote storage lo vunna state 
-file lock lo vuntundi.
+e problem ni solve cheydaniki state locking functionality vundi, edhi set chesaka oka dev config lo change chesi tf plan/apply echinappudu adhi lock state lo vuntundi a time lo
+inkoka dev evaru exec cheydaniki avvadu, plan/apply cmnd delivery ipoyaka state lock release ipotundi
 Backends are responsible for storing state and providing an API for state locking. 
 
 ## Step-01: Introduction

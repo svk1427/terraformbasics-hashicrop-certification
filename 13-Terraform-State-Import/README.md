@@ -1,5 +1,6 @@
 # Terraform State Import
-
+edhi exisiting ga vunna infra ni import cheyaniki use avutai, either local or cloud iinfra
+manam import cmnd run cheygane state file create avutai, ah state file ki thaggattuga manam config files ni create cheyyali.
 ## Step-01: Introduction
 ### Some notes about Terraform Import Command
 - Terraform is able to import existing infrastructure. 
