@@ -1,6 +1,6 @@
 # AWS EC2 Instance Module
-module "ec2_cluster" {
-  source                 = "terraform-aws-modules/ec2-instance/aws"
+module "ec2_cluster" {   //root module codes
+  source                 = "terraform-aws-modules/ec2-instance/aws" //thiis is child module
   version                = "~> 2.0"
 
   name                   = "my-modules-demo"

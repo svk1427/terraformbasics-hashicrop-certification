@@ -173,6 +173,9 @@ rm -rf terraform.tfsate*
     destination = "/var/www/html/file-copy.html"
     on_failure  = continue 
    }
+
+#onfailure endukantey eadaina issues vuntey file ki related a vati valla apply aapakunda tf apply chestundi
+#dhinii valla infra sagam sagam create avuthundi and manam observe chestey state file lo infra state taint ani vuntund, so taint ani vuntey malli whole config ni destroy cesi create cheyyali 
 ###### Verify:  Verify terraform.tfstate for  "status": "tainted"  
 ```
 ```t
@@ -212,3 +215,4 @@ resource "aws_instance" "web" {
   }
 }
 ```
+#e destroy aedhi appudu use cestam antey partcular actiion manaki destriy time lo jaragali annaoppudu

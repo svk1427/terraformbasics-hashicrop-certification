@@ -1,5 +1,6 @@
 # Terraform Cloud & Github Integration
-
+tf cloud and tf enterprise both are same but tf cloud is a cloud hosted solution, tf enterprise is a self osted solution.
+tf cloud github/gitlab tho integrate chestey inka powerful ga vuntundi
 ## Step-01: Introduction
 - Create Github Repository on github.com
 - Clone Github Repository to local desktop
@@ -179,3 +180,8 @@ Observation:
 - Goto -> Workspac -> Runs -> Click on **Confirm & Apply**
 - **Add Comment:** Approved for Deletion
 
+tf config files ni github repo loki push chestam
+terraform cloud lo login ayyaka, andulo org,workspace,vcs setup vuntadi
+indulo manam vcs github ni setup chestam chesaka eppudaitey manam ah particular repo loki push chestamo immediate ga e tf cloud lo plan and apply pipeline run avuthai,
+first plan avuthundi tarvata manual approval tho apply cheyyali but ekkada ala avvali antey 
+tf cloud lo settinigs anni proepr ga set cheyyali like general,ssh,destroy,destructions etc...

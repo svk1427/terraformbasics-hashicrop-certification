@@ -53,6 +53,7 @@ locals {
   }
 }
 ```
+var file lo cond statements evvadaniki avadu only locals lone evvadam avutadii
 - Added Availability zone argument with count.index
 - We will discuss about following conditional expressions here
 ```t

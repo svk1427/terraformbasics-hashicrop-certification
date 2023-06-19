@@ -20,6 +20,15 @@ data "aws_ami" "amzlinux" { #data means this a data resource and aws_ami means i
   }
 }
 
+#ec2 ds
+data "aws_ec2_instance_type_offering" "example" {
+  filter {
+    name   = "instance-type"
+    values = ["t3.medium", "t3.micro"]
+  }
+
+  preferred_instance_types = toset(["t3.medium", "t2.micro"])
+}
 #the whole code block is called data bloack
 #migataha vatiki lagane depends_on mtea.arg kuda e data.res ki support chestai
 #alagey mult.provider kuda dhiniki support chestadi

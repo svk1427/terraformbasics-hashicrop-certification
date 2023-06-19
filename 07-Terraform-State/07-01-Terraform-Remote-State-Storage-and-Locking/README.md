@@ -6,7 +6,9 @@ e remote file location tho kuda oka problem vundi enti antey, mult.devs okesari 
 e problem ni solve cheydaniki state locking functionality vundi, edhi set chesaka oka dev config lo change chesi tf plan/apply echinappudu adhi lock state lo vuntundi a time lo
 inkoka dev evaru exec cheydaniki avvadu, plan/apply cmnd delivery ipoyaka state lock release ipotundi
 Backends are responsible for storing state and providing an API for state locking. 
-
+Acquiring state lock. This may take a few moments... antey plan/apply run chesthunnappudu s3 lo vunna state file lock ipotundi ardam, inkoka dev access chesina avvadu
+pla/apply end lo ela ostadi
+Releasing state lock. This may take a few moments..antey lock release ipoiendi inkoka dev evaraina changes/dev cheyyochu ani ardam.
 ## Step-01: Introduction
 - Understand Terraform Backends
 - Understand about Remote State Storage and its advantages

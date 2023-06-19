@@ -20,15 +20,15 @@ resource "aws_instance" "ec2demo" {
   instance_type = "t2.micro"
 }
 
-     stage('deploy to server') {
-             steps {
-                 script {
-                     sshagent(credentials : ['deploy-user']) {
-                       sh """ssh -tt  ec2-user@3.108.236.230 << EOF 
-                         pm2 restart -f app.js
-                         exit
-                         EOF"""
-                    }
-                 }
-             }
-         }
+    #  stage('deploy to server') {
+    #          steps {
+    #              script {
+    #                  sshagent(credentials : ['deploy-user']) {
+    #                    sh """ssh -tt  ec2-user@3.108.236.230 << EOF 
+    #                      pm2 restart -f app.js
+    #                      exit
+    #                      EOF"""
+    #                 }
+    #              }
+    #          }
+    #      }

@@ -47,7 +47,7 @@ terraform {
 terraform init
 
 # Create Plan 
-terraform plan -out=v1plan.out
+terraform plan -out v1plan.out
 
 # Read the plan 
 terraform show v1plan.out
@@ -144,7 +144,7 @@ terraform apply -auto-approve
 terraform state list - edhi ah state lo vunna res list esthundi
 
 # Show the attributes of a single resource from Terraform State
-terraform  state show data.aws_ami.amzlinux - edhi ah state lo vunna res yokka attributes ni chupisthundi
+terraform state show data.aws_ami.amzlinux - edhi ah state lo vunna res yokka attributes ni chupisthundi
 terraform  state show aws_instance.my-ec2-vm - 
 ```
 ### Step-05-02: Terraform State mv command
@@ -156,7 +156,7 @@ terraform  state show aws_instance.my-ec2-vm -
 - Very dangerous command
 - Very advanced usage command
 - Results will be unpredictable if concept is not clear about terraform state files mainly  desired state and current state.  
-- Try this in production environments, only  when everything worked well in lower environments. 
+- Try this in production environments, only when everything worked well in lower environments. 
 ```t
 # Terraform List Resources
 terraform state list
@@ -296,6 +296,7 @@ edhi local state file ki use avvadhu only remote state file ki matrame
   - This reverses either a manual terraform taint or the result of provisioners failing on a resource.
   - This command will not modify infrastructure, but does modify the state file in order to unmark a resource as tainted.
 ```t
+taint antey manam eadaina res lo canes cestey vatini destroy chesi malli recreate cestadi
 untaint antey taint chesaka manam apply cheyyam anukuntey untaint cheyyochu appudu infra lo em change jaragadhu
 # List Resources from state
 terraform state list
@@ -365,6 +366,8 @@ terraform apply -target=aws_instance.my-ec2-vm-new
 ```
 eadaina res manaki confuse ga vundi adhi correct ga value estada evvaddha ani doubt vunnappudu e -target use chestam , edhi ah specific target res ni check chesi exec chestadi
 eamaina issues ostey handle chestadi
+alageyy exisiting a vunna infra lo cange jariginappudu, eadaitey cangegs jarigayo particular a
+vatike manam target cmnd echi apply /plan cheyyochu
 ## Step-09: Terraform Destroy & Clean-Up
 ```t
 # Destory Resources

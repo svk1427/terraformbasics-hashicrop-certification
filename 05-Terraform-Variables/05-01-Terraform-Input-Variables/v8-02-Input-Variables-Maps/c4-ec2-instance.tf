@@ -2,7 +2,7 @@
 resource "aws_instance" "my-ec2-vm" {
   ami                    = var.ec2_ami_id
   #instance_type          = var.ec2_instance_type[0]
-  instance_type = var.ec2_instance_type_map["small-apps"]
+  instance_type = var.ec2_instance_type_map["small-apps"] //we can refer/get the var.value with value not wit the key
   key_name               = "terraform-key"
   count                  = var.ec2_instance_count
   user_data              = <<-EOF

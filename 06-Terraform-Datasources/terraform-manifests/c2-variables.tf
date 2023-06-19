@@ -14,9 +14,9 @@ variable "ec2_ami_id" {
 }
 */
 
-variable "ec2_instance_type" {
-  description = "EC2 Instance Type"
-  type = string
-  default = "t2.micro"
-}
+# variable "ec2_instance_type" {
+#   description = "EC2 Instance Type"
+#   type = string
+#   default = "t2.micro"
+# }
 

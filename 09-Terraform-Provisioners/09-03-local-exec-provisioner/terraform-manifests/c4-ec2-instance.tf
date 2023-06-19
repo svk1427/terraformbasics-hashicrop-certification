@@ -2,7 +2,7 @@
 resource "aws_instance" "my-ec2-vm" {
   ami           = data.aws_ami.amzlinux.id 
   instance_type = var.instance_type
-  key_name      = "terraform-key"
+  key_name      = "newkey"
   #count = terraform.workspace == "default" ? 1 : 1    
 	user_data = file("apache-install.sh")  
   vpc_security_group_ids = [aws_security_group.vpc-ssh.id, aws_security_group.vpc-web.id]
@@ -20,13 +20,15 @@ resource "aws_instance" "my-ec2-vm" {
   # local-exec provisioner - (Destroy-Time Provisioner - Triggered during Destroy Resource)
   provisioner "local-exec" {
     when    = destroy
-    command = "echo Destroy-time provisioner Instanace Destroyed at `date` >> destroy-time.txt"
+    command = "echo Destroy-time provisioner Instanace Destroyed at `date' >> destroy-time.txt"
     working_dir = "local-exec-output-files/"
   }  
 
 }
 
-
+#e local exec prov appudu use avutadi antey , eadadina infra lo info ni mana local lo 
+#maintain cheyyali antey like priv.ip appudu create aiendi, s3 bucket appiudu create aiendi
+#like that kind of info
 
 
 

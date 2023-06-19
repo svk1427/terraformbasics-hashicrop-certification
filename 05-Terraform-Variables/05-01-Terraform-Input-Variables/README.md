@@ -115,9 +115,9 @@ export TF_VAR_variable_name=value
 export TF_VAR_ec2_instance_count=1   //export is for linux and set is for windows
 export TF_VAR_ec2_instance_type=t3.large
 echo $TF_VAR_ec2_instance_count, $TF_VAR_ec2_instance_type
-#windows lo set echina tarvata e 2 cmnds evvali, and mainly evi cmd promt lo work avuthnnai, powersell lo wor avvatlehu
-set TF_VAR_ec2_instance_count=2
-echo %TF_VAR_ec2_instance_count%
+#windows lo set echina tarvata e 2 cmnds evvali, and mainly evi cmd promt lo work avuthnnai, powersell lo work avvatledhu
+set TF_VAR_ec2_instance_type=t2.medium
+echo %TF_VAR_ec2_instance_type%
 # Initialize Terraform
 terraform init
 

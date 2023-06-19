@@ -1,0 +1,19 @@
+2023-05-10T19:42:57.779+0530 [INFO]  Terraform version: 1.2.5
+2023-05-10T19:42:57.780+0530 [DEBUG] using github.com/hashicorp/go-tfe v1.0.0
+2023-05-10T19:42:57.780+0530 [DEBUG] using github.com/hashicorp/hcl/v2 v2.12.0
+2023-05-10T19:42:57.780+0530 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-05-10T19:42:57.780+0530 [DEBUG] using github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734
+2023-05-10T19:42:57.780+0530 [DEBUG] using github.com/zclconf/go-cty v1.10.0
+2023-05-10T19:42:57.780+0530 [INFO]  Go runtime version: go1.18.1
+2023-05-10T19:42:57.780+0530 [INFO]  CLI args: []string{"C:\\terraform\\terraform.exe", "init"}
+2023-05-10T19:42:57.782+0530 [DEBUG] Attempting to open CLI config file: C:\Users\HP\AppData\Roaming\terraform.rc
+2023-05-10T19:42:57.782+0530 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-05-10T19:42:57.783+0530 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-05-10T19:42:57.783+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\HP\AppData\Roaming\terraform.d\plugins
+2023-05-10T19:42:57.783+0530 [DEBUG] ignoring non-existing provider search directory C:\Users\HP\AppData\Roaming\HashiCorp\Terraform\plugins
+2023-05-10T19:42:57.784+0530 [INFO]  CLI command args: []string{"init"}
+2023-05-10T19:42:57.789+0530 [DEBUG] New state was assigned lineage "3ed5322d-57b5-7ade-0de4-bf075c85b925"
+2023-05-10T19:42:59.799+0530 [DEBUG] checking for provisioner in "."
+2023-05-10T19:42:59.799+0530 [DEBUG] checking for provisioner in "C:\\terraform"
+2023-05-10T19:42:59.801+0530 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2023-05-10T19:43:00.313+0530 [DEBUG] GET https://registry.terraform.io/v1/providers/hashicorp/aws/versions

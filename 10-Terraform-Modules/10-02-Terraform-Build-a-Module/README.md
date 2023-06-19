@@ -1,5 +1,8 @@
 # Build a Terraform Module
-
+ekkada v1 lo manam aws console lo manual ga create chestam
+so dhanni v2 lo oka root module ga tf files lo raskuntam
+in v3 ah root mod ni child mod ga convert chesi and call it from the another root mod
+so ekkada convert chesina child module ni child/resuable mod antam
 ## Step-01: Introduction
 - Build a Terraform Module
     - Create a Terraform module

@@ -23,6 +23,12 @@ export TF_LOG_PATH="terraform-trace.log"
 echo $TF_LOG
 echo $TF_LOG_PATH
 
+#for windows
+set TF_LOG=TRACE
+set TF_LOG_PATH="terraform-trace.log"
+echo %TF_LOG%
+echo %TF_LOG_PATH%
+
 # Terraform Initialize
 terraform init
 

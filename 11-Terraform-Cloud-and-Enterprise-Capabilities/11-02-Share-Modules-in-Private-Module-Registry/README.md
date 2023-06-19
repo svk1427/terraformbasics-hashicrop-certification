@@ -1,5 +1,19 @@
 # Share Modules in Private Modules Registry
+tf cloud lo mana modules nii upload chestam, vitini private modules antam
+munduga mod create chesi, next gituhb repo lo ah mod ni add chestam
+nex, ah tf cloud tho github ni integrate chetsam OAut app tho
+interate chesaka ah gituhb lo vunna module ni import chestam tf cloud loki
+import cesaka ah mod ni use cheydam start cestam,
+so ela use chesinappudu tf pri.cloud mod ni direct ga access cheydaniki avvadhu
+access ceydaniki e below steps follow avvali
 
+# Terraform Login
+terraform login
+Observation: 
+1) Should see message |Success! Terraform has obtained and saved an API token.|
+2) Verify Terraform credentials file
+cat /Users/<YOUR_USER>/.terraform.d/credentials.tfrc.json
+cat /Users/kdaida/.terraform.d/credentials.tfrc.json
 ## Step-01: Introduction
 - Create and version a GitHub repository for use in the private module registry
 - Import a module into your organization's private module registry.

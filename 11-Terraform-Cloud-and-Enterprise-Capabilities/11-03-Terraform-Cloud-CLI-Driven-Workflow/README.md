@@ -1,5 +1,8 @@
 # Terraform Cloud - CLI-Driven Workflow
-
+antey, manam vs code lo run cestunnna cmnds like plan,apply
+manam cmnds local lo run chesinappudu cli nundi avi tf cloud lo run avutai
+ela run avvadam valla tf logs,state anni tf cloud lo maintain avuthai this is called 
+cli-driven. 
 ## Step-01: Introduction
 - Learn and practically implement `CLI-Driven Workflow` in Terraform Cloud
 

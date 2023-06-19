@@ -118,7 +118,7 @@ fileexists("${path.module}/files/hello.txt")
 # templatefile Function: Reads the file at the given path and renders its content as a template using a supplied set of template variables.
 templatefile(path, vars)
 ```
-
+tem.file antey eadaitey manam var lo estamo adhhi use chesi a particular file ki data ni pass chestadi by using tem.file lo vunna content tho
 ## Step-07: templatefile & concat Function - Review TF Files
 - **Reference Folder:** terraform-manifests
 ### c1-versions.tf
@@ -217,3 +217,7 @@ rm -rf terraform.tfstate*
 
 ## References
 - [Terraform Functions](https://www.terraform.io/docs/language/functions/index.html)
+
+tf func antey manaki vpc,subnets avi create ceydam lo use avuthai alagey paina vunna diff func tho diff use cases lo use cheyyochu
+concat antey I/O ni list loki convert chesi manaki display chestadi
+templatefile is very imp func

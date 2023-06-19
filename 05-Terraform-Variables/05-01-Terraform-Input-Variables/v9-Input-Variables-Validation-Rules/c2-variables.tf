@@ -8,10 +8,10 @@ variable "aws_region" {
 variable "ec2_ami_id" {
   description = "AMI ID"
   type        = string
-  default     = "ami-0915bcb5fa77e4892" # Amazon2 Linux AMI ID
+  default     = "ami-08422" # Amazon2 Linux AMI ID
   validation {
-    #condition = length(var.ec2_ami_id) > 4 && substr(var.ec2_ami_id, 0, 4) == "ami-"
-    condition     = can(regex("^[0-9A-Za-z-]+$", var.ec2_ami_id))
+    condition = length(var.ec2_ami_id) > 4 && substr(var.ec2_ami_id, 0, 4) == var.ec2_ami_id
+    #condition     = can(regex("^[0-9A-Za-z-]+$", var.ec2_ami_id))
     error_message = "The ec2_ami_id value must be a valid AMI id, starting with \"ami-\"."
   }
 }

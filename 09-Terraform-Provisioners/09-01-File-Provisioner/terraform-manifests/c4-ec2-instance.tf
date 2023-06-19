@@ -2,7 +2,7 @@
 resource "aws_instance" "my-ec2-vm" {
   ami           = data.aws_ami.amzlinux.id 
   instance_type = var.instance_type
-  key_name      = "terraform-key"
+  key_name      = "newkey"
   #count = terraform.workspace == "default" ? 1 : 1    
 	user_data = file("apache-install.sh")  
   vpc_security_group_ids = [aws_security_group.vpc-ssh.id, aws_security_group.vpc-web.id]
@@ -16,7 +16,7 @@ resource "aws_instance" "my-ec2-vm" {
     host = self.public_ip # Understand what is "self"
     user = "ec2-user"
     password = ""
-    private_key = file("private-key/terraform-key.pem")
+    private_key = file("private-key/newkey.pem")
   }  
 
  # Copies the file-copy.html file to /tmp/file-copy.html
@@ -44,16 +44,16 @@ resource "aws_instance" "my-ec2-vm" {
   }
 
 
-/*
+
 # Enable this during Section 09-01 Step-05
  # Copies the file-copy.html file to /var/www/html/file-copy.html where ec2-user don't have permission to copy
  # This provisioner will fail but we don't want to taint the resource, we want to continue on_failure
   provisioner "file" {
     source      = "apps/file-copy.html"
     destination = "/var/www/html/file-copy.html"
-    #on_failure  = continue  # Enable this during Test-2
+    on_failure  = continue  # Enable this during Test-2
    }
-*/ 
+
 }
 
 

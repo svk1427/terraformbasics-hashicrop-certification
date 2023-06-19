@@ -1,5 +1,8 @@
 # Migrate State to Terraform Cloud
+first local lo state file create ayyela execute chesi, ah file ni
+tf cloud loki migrate chestam
 
+tf cloud lo tf.vars lo vunnattu default vars ni kuda declare cheskovachu
 ## Step-01: Introduction
 - We are going to migrate State to Terraform Cloud
 
