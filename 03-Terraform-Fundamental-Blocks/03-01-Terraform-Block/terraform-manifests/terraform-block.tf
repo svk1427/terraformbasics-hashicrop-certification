@@ -24,7 +24,6 @@ required_version = ">= 0.13"
   greatertan-equal to antey echina value kantey ekkuva or equal a local version vuntey 
   allow chestadi lekapotey ledhu
 required_version = "= 0.13" same e version vunteyene tiskuntadi 0.13.4 aiiena tiskodu 
-required_version = "~> 1.2"  ela vuntey 1.2 datina tarvata antey 1.3 ala vuntey allow cheydu
 
 
 Play with Provider Version

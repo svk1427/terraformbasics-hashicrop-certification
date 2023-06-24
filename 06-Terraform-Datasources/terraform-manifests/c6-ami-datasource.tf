@@ -34,8 +34,8 @@ data "aws_ec2_instance_type_offering" "example" {
 #alagey mult.provider kuda dhiniki support chestadi
 #lifecycle support cheydhu
 #count and foreach support chestai
-#if u want to call api/cloud from outside terraform at that time also s will be useful
-#eadaina another diff pro lo vuunna data ni present tf project lo use cheyyali anna sare
+#if u want to call api/cloud from outside terraform at that time also it will be useful
+#eadaina another diff proj lo vuunna data ni present tf project lo use cheyyali anna sare
 #e ds use avutai
 #u can also use to fetch or computed values in tf config using ds
 #it declares with a data resource resource name

@@ -23,7 +23,7 @@ output "ec2_publicdns" {
   #sensitive = true   #Uncomment it during step-04 execution #els estey exec lo output values lo sensitive chupistai original value cupinchadu
 }
 
-#apply chesaka terraform output cmnd to  output cudochu
+#apply chesaka terraform output cmnd to output chudochu
 #alaney particular res output ni kuda chudochu like 
 #terraform output ec2_security_groups
 #terraform output ec2_publicdns

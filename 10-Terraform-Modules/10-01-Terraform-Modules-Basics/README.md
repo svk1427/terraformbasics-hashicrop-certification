@@ -1,7 +1,5 @@
 # Terraform Module Basics
-manam tf website nundi download chesi module ane folder lo pettukunna and tf website nundii direct ga use ceskunna source attr nundi call cheskunna ah particular module nii child mod antam
 
-eadaitey manam code raskoni a child mod ni call chestamo vatini root modules antam
 ## Step-01: Introduction
 1. Introduction - Module Basics  
   - Root Module

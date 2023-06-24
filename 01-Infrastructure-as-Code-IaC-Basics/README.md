@@ -12,7 +12,6 @@
 - Security
 - Audit
 
-
-AWS SOLUTION ARCHIETECT PREPARATION:
-====================================
+3-1,3-3,3-4,4-1,4-2,4-5,5-1(readme file),5-2,6,7-1-readmefile,7-2,7-2-readmefile,8(readmefile),9-1-readmefile,9-2-readmefile,9-3,9-3-readmefile,9-4-readmefile,10-1,11 and 12-need to learn once again,
+13-readmefile,14-readmefile,15-1-readme,15-2-readme,16-readme
 
